@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import myPhoto from "../assets/myPhoto.jpg";
 import { motion } from "framer-motion";
+import TypedText from "./TypedText";
 
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
@@ -25,7 +26,7 @@ const Hero = () => {
 							initial="hidden"
 							animate="visible"
 							className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-							Full Stack Developer
+							<TypedText/>
 						</motion.span>
 						<motion.p
 							variants={container(1.2)}

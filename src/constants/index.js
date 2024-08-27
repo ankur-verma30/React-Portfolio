@@ -1,11 +1,14 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+// import project4 from "../assets/projects/project-4.jpg";
+import LeetCodeLogo from "../assets/LeetCode.jpg";
+import GFGLogo from "../assets/GFG.jpg";
+import CodeChefLogo from "../assets/CodeChef.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications.I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
@@ -19,48 +22,70 @@ export const EXPERIENCES = [
     year: " August 2023 -August 2024",
     role: "Head of Operations ",
     company: "Developers Student Club GGV",
-    description: `Involves overseeing the daily operations of the organization to ensure efficiency and effectiveness. Contributing to the technical side by developing user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance. `,
+    description: `Involves overseeing the daily operations of the organization to ensure efficiency and effectiveness. Contributing to the technical side by building web applications using Next.js and React.Implemented responsive designs and optimized frontend performance. `,
     technologies: ["React.js", "TailwindCSS", "Next.js", "Node.js"],
   },
   {
     year: " August 2022 -August 2023",
     role: "Co-Lead of Web/Android Development Team ",
     company: "Developers Student Club GGV",
-    description: `Developed and maintained web applications using HTML,CSS,JS. Worked closely with backend developers to integrate frontend components with Node.js APIs. Collaborated with cross-functional teams to deliver high-quality software.`,
+    description: `Developed and maintained web applications using HTML,CSS,JS. Worked closely with backend developers to integrate frontend components with Node.js APIs. Collaborated with cross-functional teams.`,
     technologies: ["HTML", "CSS", "JS"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Advanced-Web-Developement-Projects",
     image: project1,
+    projectLink:"https://github.com/ankur-verma30/Advanced-Web-Developement-Projects",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Variety of Projects on Advaced Web technologies to gain a deeper understanding of web development.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB","Express","Next.js"],
   },
   {
-    title: "Task Management App",
+    title: "MovieMania",
     image: project2,
+    projectLink:"https://github.com/ankur-verma30/MovieMania",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "An application for managing movies and its comments, with features such as authentication, tracking users, and rating movies.",
+    technologies: ["HTML", "CSS", "React", "Firebase"],
   },
   {
-    title: "Portfolio Website",
+    title: "HTML,CSS,JS Projects",
     image: project3,
+    projectLink:"https://github.com/ankur-verma30/Simple-Projects-Using-HTML-CSS-JavaScript",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Simple projects to learn HTML,CSS,JS and start building web applications.",
+    technologies: ["HTML", "CSS", "Javascript","Bootstrap"],
   },
 ];
+
+export const CODING_STATS=[
+  {  
+    title:"LeetCode",
+    image: LeetCodeLogo, 
+    profileLink:"https://leetcode.com/u/ankur_code07/", 
+    discription: "Contest rating of 1,568, with 487 problems solved and five badges earned, including the 200 Days Badge 2024.",
+    problemsSolved: '450+', 
+  },
+  { 
+    title:"GFG",
+    image: GFGLogo, 
+    profileLink: "https://www.geeksforgeeks.org/user/ankur_verma3008/", 
+    discription:"Solved 286 problems, have a coding score of 700, a contest rating of 1721, and a current streak of 109 days. You're ranked 63rd among peers.",
+    problemsSolved: "280+", 
+     
+  },
+  { 
+  
+    title:"Codechef",
+    image: CodeChefLogo, 
+    profileLink: "hhttps://www.codechef.com/users/ankurverma30",
+    discription: "Rating of 1486 in Division 3, with a global rank of 30,585 and a country rank of 27,408.", 
+    problemsSolved: "50+"
+  },
+]
 
 export const CONTACT = {
   address: "Guru Ghasidas University Bilaspur, Chhattisgarh,India",
