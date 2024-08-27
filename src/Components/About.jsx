@@ -1,0 +1,35 @@
+import myPhoto from "../assets/myPhoto.jpg";
+import { ABOUT_TEXT } from "../constants";
+import { motion } from "framer-motion";
+
+const About = () => {
+	return (
+		<div className=" border-neutral-900 pb-4">
+			<motion.h1  whileInView={{ opacity: 1,y:0 }} initial={{ opacity: 0,y:-100 }} transition={{ duration: 1.5 }} className="my-20 text-center text-4xl">
+				About
+				<span className="text-netutral-500"> Me</span>
+			</motion.h1>
+			<div className="flex flex-wrap">
+				<motion.div
+					whileInView={{ x: 0, opacity: 1 }}
+					initial={{ x: -100, opacity: 0 }}
+					transition={{ duration: 0.5 }}
+					className="w-full lg:w-1/4 lg:p-8">
+					<div className="flex items-center justify-center">
+						<img className="rounded-2xl" src={myPhoto} alt="this is my photo" />
+					</div>
+				</motion.div>
+				<motion.div
+					whileInView={{ x: 0, opacity: 1 }}
+					initial={{ x: -100, opacity: 0 }}
+					transition={{ duration: 1.2 }}
+					className="w-full lg:w-1/2">
+					<div className="flex justify-center lg:justify-start">
+						<p className="my-8 max-w-3xl py-4 px-8">{ABOUT_TEXT}</p>
+					</div>
+				</motion.div>
+			</div>
+		</div>
+	);
+};
+export default About;
